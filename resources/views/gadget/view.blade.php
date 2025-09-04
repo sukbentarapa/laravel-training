@@ -3,32 +3,32 @@
 @section('content')
     <section>
 
-        <h1>Gadget View : </h1>
+        <h1>Gadget View : {{ $gadget->name }}</h1>
 
         <table class="table table-bordered">
             <tr>
                 <th>ID</th>
-                <td></td>
+                <td>{{ $gadget->id }}</td>
             </tr>
 
             <tr>
                 <th>Name</th>
-                <td></td>
+                <td>{{ $gadget->name }}</td>
             </tr>
 
             <tr>
                 <th>Phone Number</th>
-                <td></td>
+                <td>{{ $gadget->phone_number }}</td>
             </tr>
 
             <tr>
                 <th>Serial Number</th>
-                <td></td>
+                <td>{{ $gadget->serial_number }}</td>
             </tr>
 
             <tr>
                 <th>Brand</th>
-                <td></td>
+                <td>{{ $gadget->brand }}</td>
             </tr>
         </table>
 

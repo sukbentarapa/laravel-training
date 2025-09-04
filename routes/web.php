@@ -65,7 +65,8 @@ Route::get('/gadgets', function(){
     ]);
 });
 
-Route::get('/gadgets/view', [GadgetController::class, 'view'])->name('gadgets.view');
+// Kaedah 1
+Route::get('/gadgets/view/{id}', [GadgetController::class, 'view'])->name('gadgets.view');
 
 
 

@@ -19,10 +19,10 @@ class GadgetsTableSeeder extends Seeder
 
         foreach (range(1, 10) as $key){
             $data[] = [
-                'name' =>  "Name $key",
-                'phone_number' => "Phone Number $key",
+                'name' =>  fake()->company(),
+                'phone_number' => fake()->mobileNumber(),
                 'serial_number' => rand(10000,100000),
-                'brand' => "Brand $key",
+                'brand' => fake()->city(),
                 'status' => rand(0,1),
                 'created_at' => now(),
                 'updated_at' => now()

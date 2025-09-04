@@ -17,9 +17,10 @@ class GadgetsTableSeeder extends Seeder
 
         $data = [];
 
-        foreach (range(1, 10) as $key){
+        foreach (range(1, 1000) as $key){
             $data[] = [
                 'name' =>  fake()->company(),
+                'user_id' => rand(1, 100),
                 'phone_number' => fake()->mobileNumber(),
                 'serial_number' => rand(10000,100000),
                 'brand' => fake()->city(),

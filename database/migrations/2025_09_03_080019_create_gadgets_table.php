@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('gadgets', function (Blueprint $table) {
             $table->id();
+
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+
             //name,phone_number,serial_number,brand,status
             $table->string('name'); //iphone, vivo X70
             $table->string('phone_number'); // 012

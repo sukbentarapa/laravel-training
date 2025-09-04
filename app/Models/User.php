@@ -43,4 +43,8 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    public function gadgets()
+    {
+        return $this->hasMany(Gadget::class);
+    }
 }

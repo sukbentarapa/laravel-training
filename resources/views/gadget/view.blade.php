@@ -30,6 +30,11 @@
                 <th>Brand</th>
                 <td>{{ $gadget->brand }}</td>
             </tr>
+
+            <tr>
+                <th>Owner</th>
+                <td></td>
+            </tr>
         </table>
 
 
